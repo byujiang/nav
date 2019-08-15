@@ -1,0 +1,243 @@
+﻿
+@media screen and (max-width: 500px) {
+    .box a {
+        width: 90px !important;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /*text-shadow: 0 0 3px rgba(0,0,0,0.2);*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    color: #4c4c4c;
+}
+
+.nav-input li {
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+}
+
+    .nav-input li a {
+        padding: 8px 0;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 2px black;
+    }
+
+        .nav-input li a:hover, .nav-input li a:focus, .nav-input .active {
+            background-color: transparent;
+            color: #e54129;
+            text-shadow: 0 0 2px white;
+        }
+
+.nav-input {
+    width: 100%;
+}
+
+    .nav-input ul {
+        display: none;
+    }
+
+.square {
+    display: block;
+    text-align: center;
+    height: 80px;
+    width: 75px;
+    position: relative;
+    padding: 2px;
+}
+
+    .square:hover {
+        border-radius: 8px;
+        background-color: rgba(250,250,250,0.5);
+        text-decoration: none;
+    }
+
+    .square .glyphicon-pencil {
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-shadow: 0 0 2px black;
+        color: white;
+    }
+
+        .square .glyphicon-pencil:hover {
+            animation: glyphicon 1s;
+        }
+
+.box {
+    margin-top: 20px;
+}
+
+    .box a {
+        background-color: rgba(0,0,0,0.3);
+        color: white;
+        display: block;
+        text-align: center;
+        height: 42px;
+        width: 100px;
+        line-height: 42px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        .box a:hover {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box a:focus {
+            text-decoration: none;
+        }
+
+.link-box .glyphicon-pencil {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.link-box .glyphicon-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box .glyphicon:hover {
+    text-shadow: 0 0 2px white;
+    animation: glyphicon 1s;
+}
+
+@keyframes glyphicon {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.link-box {
+    margin-top: 8px;
+}
+
+.box-title {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+}
+
+    .box-title i {
+        float: right;
+        margin-left: 10px;
+    }
+
+.topright a {
+    color: white;
+    text-shadow: 0 0 2px black;
+    margin-left: 10px;
+    float: right;
+}
+
+#foot {
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+#foot a{
+    color:white;
+    text-shadow:0 0 2px black;
+}
+
+.foot-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.add_group {
+    cursor: pointer;
+}
+
+.edit_mode {
+    display: none;
+}
+
+.image_select {
+    background-color: #a3ceea;
+}
+
+.select {
+    background-color: gray;
+}
+
+#img_upload_click {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 100;
+    display: none;
+    height: 100%;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+.container {
+    width:90%;
+}
+
+@media only screen and (max-width: 600px) {
+	.col-lg-1, .col-xs-3 {
+		width: 25%;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.col-lg-1, .col-xs-3 {
+		width: 6.5%;
+	}
+}
+
+body::before {
+    content: "";
+    background: url(../img/uid2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    top: 0;
+    left:  0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+	background-repeat:repeat-y;
+    z-index: -1;
+  }
