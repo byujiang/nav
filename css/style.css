@@ -62,7 +62,15 @@ a {
     position: relative;
     padding: 2px;
 }
-
+.row-square {
+    position:absolute;
+    bottom:2px;
+    left:0;
+    right:0;
+    text-shadow:0 0 2px black;
+    color:white;
+    font-size:11px;
+}
     .square:hover {
         border-radius: 8px;
         background-color: rgba(250,250,250,0.5);
@@ -206,6 +214,10 @@ a {
     padding-right: 1px;
     padding-left: 1px;
 
+}
+
+.nav-img{
+    width:40px;border-radius: 20%;
 }
 
 .container {
