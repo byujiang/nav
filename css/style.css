@@ -237,7 +237,7 @@ a {
 
 body::before {
     content: "";
-    background: url(../img/uid2.jpg);
+    background: url(../img/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     -webkit-filter: blur(5px);
@@ -250,6 +250,6 @@ body::before {
     bottom: 0;
     right: 0;
     position: absolute;
-	background-repeat:repeat-y;
+    background-repeat:repeat-y;
     z-index: -1;
   }
