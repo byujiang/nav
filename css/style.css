@@ -19,8 +19,20 @@ body {
     height: 100%;
     overflow: auto;
     /*text-shadow: 0 0 3px rgba(0,0,0,0.2);*/
+    background: url(../img/background.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
+    top: 0;
+    left:  0;
+    bottom: 0;
+    right: 0;
 }
 
 a {
@@ -235,21 +247,3 @@ a {
 	}
 }
 
-body::before {
-    content: "";
-    background: url(../img/background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -ms-filter: blur(5px);
-    -o-filter: blur(5px);
-    filter: blur(5px);
-    top: 0;
-    left:  0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background-repeat:repeat-y;
-    z-index: -1;
-  }
