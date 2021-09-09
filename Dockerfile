@@ -1,7 +1,7 @@
 From nginx:stable-alpine
 
-RUN apk update && apk upgrade && apk add git
+WORKDIR /usr/share/nginx/
 
-RUN cd /usr/share/nginx/ && rm -rf html && \
-git clone https://github.com/byujiang/nav.git html &&\
-apk del git
+RUN apk update && apk upgrade && apk add git && rm -rf html
+
+RUN git clone https://github.com/byujiang/nav.git html && apk del git
