@@ -6,4 +6,4 @@ git pull github master
 git push origin master
 git push github master
 
-ssh amito.me "sh a.sh"
+ssh amito "cd /data/web/nav0 && git pull"
